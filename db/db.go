@@ -49,10 +49,22 @@ func (rs *RecordStatus) Exists() bool {
 	return rs.exists
 }
 
+//SetExists ...
+func (rs *RecordStatus) SetExists(e bool) {
+
+	rs.exists = e
+}
+
 //Deleted ...
 func (rs *RecordStatus) Deleted() bool {
 
 	return rs.deleted
+}
+
+//SetDeleted ...
+func (rs *RecordStatus) SetDeleted(e bool) {
+
+	rs.deleted = e
 }
 
 //DBLog ...
